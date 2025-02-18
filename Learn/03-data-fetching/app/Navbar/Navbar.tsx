@@ -26,17 +26,17 @@ const Navbar: React.FC = () => {
           }`}
         >
           <li>
-            <Link href="/about" className="hover:text-gray-500">
+            <Link href="/about" className="hover:text-rose-400">
               About
             </Link>
           </li>
           <li>
-            <Link href="/posts" className="hover:text-gray-500">
+            <Link href="/posts" className="hover:text-rose-400">
               Posts
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-gray-500">
+            <Link href="/contact" className="hover:text-rose-400">
               Contact
             </Link>
           </li>

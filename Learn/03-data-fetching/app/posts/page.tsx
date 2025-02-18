@@ -1,4 +1,5 @@
 // app/posts/page.tsx (or similar)
+import Link from "next/link";
 import { Suspense } from "react";
 import Loading from "../loading";
 
@@ -27,6 +28,11 @@ const PostsList = async () => {
         <div key={post.id} className="mb-4 p-4">
           <h2 className="text-xl font-semibold">{post.title}</h2>
           <p className="text-rose-400">{post.body}</p>
+          <Link href={`/posts/${post.id}`}>
+            <button className="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-rose-400 transition">
+              Details
+            </button>{" "}
+          </Link>
         </div>
       ))}
     </>
